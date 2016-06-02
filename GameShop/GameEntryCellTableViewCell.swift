@@ -24,6 +24,7 @@ class GameEntryCellTableViewCell: UITableViewCell {
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
+        /*
         if(selected){
             if (self.accessoryType == UITableViewCellAccessoryType.None){
              self.accessoryType = UITableViewCellAccessoryType.Checkmark
@@ -32,6 +33,7 @@ class GameEntryCellTableViewCell: UITableViewCell {
             }
         
         }
+         */
         
         
         // Configure the view for the selected state

@@ -26,12 +26,13 @@ class GameShopTableViewController: UITableViewController {
         self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
         
         let nib = UINib(nibName: "gameEntryCell", bundle: nil)
-        
         GameTableView.registerNib(nib, forCellReuseIdentifier: "GameCell")
         
         
         let path = NSBundle.mainBundle().pathForResource("Data", ofType: "plist")
         let dict = NSDictionary(contentsOfFile: path!)
+        
+        //let entries = dict as! [String:[String]]
         
         gameNames = dict!.objectForKey("GameName") as! [String]
         covers = dict!.objectForKey("Cover") as! [String]
@@ -40,7 +41,8 @@ class GameShopTableViewController: UITableViewController {
         
 
         for (index, name) in gameNames.enumerate(){
-            let game = Game(title: name, cover: covers[index], system: systems[index], price: prices[index]);            games.append(game)
+            let game = Game(title: name, cover: covers[index], system: systems[index], price: prices[index]);
+            games.append(game)
         }
     
     }
@@ -73,16 +75,30 @@ class GameShopTableViewController: UITableViewController {
         let price = game.price;
         cell.priceLabel?.text = "€ \(price)"
         cell.consoleLabel?.text = game.system
+        
+        if game.selected{
+            cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+        }else{
+            cell.accessoryType = UITableViewCellAccessoryType.None
+        }
 
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        
+        games[indexPath.row].selected = !games[indexPath.row].selected
         let selectedCell = tableView.cellForRowAtIndexPath(indexPath)!
-        selectedCell.backgroundColor = UIColor.whiteColor()
+
+        if games[indexPath.row].selected{
+            selectedCell.accessoryType = UITableViewCellAccessoryType.Checkmark
+        }else{
+            selectedCell.accessoryType = UITableViewCellAccessoryType.None
+        }
         
+        
+        //selectedCell.backgroundColor = UIColor.whiteColor()
+    
     }
 
 }

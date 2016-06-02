@@ -30,15 +30,15 @@
                             <constraint firstAttribute="width" constant="61" id="cJm-qn-AXQ"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier=" console" text="Konsole" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hx1-DN-W1f">
-                        <rect key="frame" x="77" y="49" width="58" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="game_name" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmb-7g-g3R">
                         <rect key="frame" x="77" y="8" width="242" height="21"/>
                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier=" console" text="Konsole" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hx1-DN-W1f">
+                        <rect key="frame" x="77" y="49" width="58" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -47,15 +47,18 @@
                     <constraint firstItem="H0J-Qb-QrW" firstAttribute="bottom" secondItem="Zcr-Mn-vpi" secondAttribute="bottom" id="12h-Ju-7XG"/>
                     <constraint firstItem="DfH-Fg-1Yl" firstAttribute="top" secondItem="4x2-Tw-bdR" secondAttribute="topMargin" id="6iO-do-PGZ"/>
                     <constraint firstItem="DfH-Fg-1Yl" firstAttribute="top" secondItem="Zcr-Mn-vpi" secondAttribute="top" id="F8o-Ok-gYc"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hx1-DN-W1f" secondAttribute="bottom" constant="-1" id="GL2-y4-vl0"/>
                     <constraint firstItem="DfH-Fg-1Yl" firstAttribute="top" secondItem="mmb-7g-g3R" secondAttribute="top" id="GdC-hG-RwF"/>
                     <constraint firstItem="DfH-Fg-1Yl" firstAttribute="trailing" secondItem="Zcr-Mn-vpi" secondAttribute="trailing" id="LyS-mL-sKa"/>
                     <constraint firstItem="H0J-Qb-QrW" firstAttribute="bottom" secondItem="4x2-Tw-bdR" secondAttribute="bottomMargin" id="R5e-DF-cGK"/>
                     <constraint firstItem="mmb-7g-g3R" firstAttribute="leading" secondItem="DfH-Fg-1Yl" secondAttribute="trailing" constant="8" symbolic="YES" id="TZh-cD-0zS"/>
                     <constraint firstItem="H0J-Qb-QrW" firstAttribute="trailing" secondItem="4x2-Tw-bdR" secondAttribute="trailingMargin" id="Y5h-Q6-gkk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="H0J-Qb-QrW" secondAttribute="trailing" id="aau-bG-eFp"/>
                     <constraint firstItem="hx1-DN-W1f" firstAttribute="leading" secondItem="DfH-Fg-1Yl" secondAttribute="trailing" constant="8" symbolic="YES" id="dcg-ff-XWd"/>
                     <constraint firstItem="H0J-Qb-QrW" firstAttribute="bottom" secondItem="DfH-Fg-1Yl" secondAttribute="bottom" id="drQ-3u-nrn"/>
                     <constraint firstItem="DfH-Fg-1Yl" firstAttribute="leading" secondItem="4x2-Tw-bdR" secondAttribute="leadingMargin" id="f9Z-hb-XIK"/>
                     <constraint firstItem="DfH-Fg-1Yl" firstAttribute="leading" secondItem="Zcr-Mn-vpi" secondAttribute="leading" id="ims-j4-hVi"/>
+                    <constraint firstAttribute="topMargin" secondItem="mmb-7g-g3R" secondAttribute="top" id="rU7-t6-bMf"/>
                     <constraint firstItem="H0J-Qb-QrW" firstAttribute="trailing" secondItem="4x2-Tw-bdR" secondAttribute="trailingMargin" id="y3c-lr-paU"/>
                     <constraint firstItem="H0J-Qb-QrW" firstAttribute="baseline" secondItem="hx1-DN-W1f" secondAttribute="baseline" id="ygy-Js-4nX"/>
                 </constraints>
