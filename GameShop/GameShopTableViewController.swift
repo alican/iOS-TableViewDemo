@@ -12,6 +12,9 @@ class GameShopTableViewController: UITableViewController {
     
     @IBOutlet var GameTableView: UITableView!
     
+    var games = [Game]()
+    
+    
     var gameNames = [String]()
     var covers = [String]()
     var systems = [String]()
@@ -34,11 +37,15 @@ class GameShopTableViewController: UITableViewController {
         covers = dict!.objectForKey("Cover") as! [String]
         systems = dict!.objectForKey("System") as! [String]
         prices = dict!.objectForKey("Price") as! [String]
+        
 
+        for (index, name) in gameNames.enumerate(){
+            let game = Game(title: name, cover: covers[index], system: systems[index], price: prices[index]);            games.append(game)
+        }
     
     }
     
-    // asd‚
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -58,12 +65,14 @@ class GameShopTableViewController: UITableViewController {
         
         let cell:GameEntryCellTableViewCell = self.GameTableView.dequeueReusableCellWithIdentifier("GameCell") as! GameEntryCellTableViewCell
         
-        cell.gameNameLabel?.text = gameNames[indexPath.row]
-        cell.productImage?.image = UIImage(named: covers[indexPath.row])
+        let game = games[indexPath.row]
+        
+        cell.gameNameLabel?.text = game.title
+        cell.productImage?.image = UIImage(named: game.cover)
         cell.productImage?.contentMode = .ScaleAspectFit
-        let price = prices[indexPath.row];
+        let price = game.price;
         cell.priceLabel?.text = "€ \(price)"
-        cell.consoleLabel?.text = systems[indexPath.row]
+        cell.consoleLabel?.text = game.system
 
         return cell
     }

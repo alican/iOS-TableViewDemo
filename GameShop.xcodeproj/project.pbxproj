@@ -55,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		5A3AA3591CFF9C2200EB83D2 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		5A3AA35B1CFFB2DA00EB83D2 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		5AE1CC971CFD068700CD8065 /* GameShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AE1CC9A1CFD068700CD8065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AE1CC9C1CFD068700CD8065 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +150,7 @@
 				5AE1CCC81CFD0A9E00CD8065 /* GameShopTableViewController.swift */,
 				5AE729F21CFDDB8500AA2B26 /* gameEntryCell.xib */,
 				5A3AA3591CFF9C2200EB83D2 /* Game.swift */,
+				5A3AA35B1CFFB2DA00EB83D2 /* MyPlayground.playground */,
 			);
 			path = GameShop;
 			sourceTree = "<group>";
