@@ -38,7 +38,7 @@ class GameShopTableViewController: UITableViewController {
     
     }
     
-    
+    // asd‚
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
